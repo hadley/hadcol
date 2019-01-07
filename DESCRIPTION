@@ -1,14 +1,14 @@
 Package: hadcol
-Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
-License: What license it uses
+Title: Hadley's utilities for adding columns
+Description: A small teaching example.
+Authors@R: c(
+    person("Hadley", "Wickham", , "hadley@rstudio.com", role = c("aut", "cre")),
+    person("RStudio", role = "cph")
+  )
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Suggests: 
     testthat
+RoxygenNote: 6.0.1
