@@ -4,6 +4,6 @@ add_col <- function(x, name, value, where = ncol(x) + 1) {
     x
   } else {
     df <- setNames(data.frame(value), name)
-    add_cols(x, df, where = where)
+    insert_into(x, df, where = where)
   }
 }
