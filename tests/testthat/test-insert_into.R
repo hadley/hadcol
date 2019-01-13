@@ -12,3 +12,11 @@ test_that("can add column at any position", {
   expect_named(at_pos(3), c("a", "b", "X", "Y", "c"))
   expect_named(at_pos(4), c("a", "b", "c", "X", "Y"))
 })
+
+test_that("where must be valid value", {
+  expect_error(check_where("a"), "length one numeric vector")
+  expect_error(check_where(1:10), "length one numeric vector")
+
+  expect_error(check_where(0), "not be zero or missing")
+  expect_error(check_where(NA_real_), "not be zero or missing")
+})
